@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMW - The Ultimate Driving Machine</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            BMW
+        </div>
+
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#cars">Dòng xe</a>
+            <a href="#technology">Công nghệ</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+
+    <!-- BANNER -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <p class="small-title">BMW VIỆT NAM</p>
+
+            <h1>THE ULTIMATE<br>DRIVING MACHINE</h1>
+
+            <p>
+                Khám phá trải nghiệm lái xe đầy cảm xúc
+                cùng những mẫu xe BMW mới nhất.
+            </p>
+
+            <button>XEM DÒNG XE</button>
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro">
+
+        <p class="section-small">
+            KHÁM PHÁ BMW
+        </p>
+
+        <h2>
+            Được tạo ra để<br>
+            mang đến cảm giác lái khác biệt.
+        </h2>
+
+        <p class="description">
+            BMW kết hợp thiết kế sang trọng, công nghệ tiên tiến
+            và khả năng vận hành mạnh mẽ để tạo nên trải nghiệm
+            lái xe đầy cảm xúc.
+        </p>
+
+    </section>
+
+
+    <!-- CAR GALLERY -->
+    <section id="cars" class="cars-section">
+
+        <div class="section-title">
+            <p>DÒNG XE BMW</p>
+            <h2>Khám phá những mẫu xe nổi bật</h2>
+        </div>
+
+
+        <!-- KHU VỰC HIỂN THỊ XE LỚN -->
+        <div id="image">
+
+            <div class="preview-content">
+
+                <p id="car-category">
+                    BMW COLLECTION
+                </p>
+
+                <h2 id="car-name">
+                    Di chuột qua một mẫu xe bên dưới
+                </h2>
+
+                <p id="car-description">
+                    Khám phá các dòng xe BMW để xem thông tin chi tiết.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CÁC XE NHỎ -->
+        <div class="car-list">
+
+            <div class="car-item"
+                 onmouseover="update(this)"
+                 onmouseout="undo()"
+                 data-name="BMW M4 Competition"
+                 data-category="BMW M SERIES"
+                 data-description="Mạnh mẽ, thể thao và đầy cảm xúc với hiệu suất ấn tượng."
+                 data-image="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1600&q=80">
+
+                <img
+                    src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80"
+                    alt="BMW M4 Competition">
+
+                <h3>BMW M4 Competition</h3>
+
+            </div>
+
+
+            <div class="car-item"
+                 onmouseover="update(this)"
+                 onmouseout="undo()"
+                 data-name="BMW M5"
+                 data-category="BMW M SERIES"
+                 data-description="Sự kết hợp giữa hiệu suất thể thao và sự sang trọng."
+                 data-image="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1600&q=80">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80"
+                    alt="BMW M5">
+
+                <h3>BMW M5</h3>
+
+            </div>
+
+
+            <div class="car-item"
+                 onmouseover="update(this)"
+                 onmouseout="undo()"
+                 data-name="BMW X5"
+                 data-category="BMW X SERIES"
+                 data-description="SUV sang trọng với không gian rộng rãi và khả năng vận hành mạnh mẽ."
+                 data-image="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1600&q=80">
+
+                <img
+                    src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80"
+                    alt="BMW X5">
+
+                <h3>BMW X5</h3>
+
+            </div>
+
+
+            <div class="car-item"
+                 onmouseover="update(this)"
+                 onmouseout="undo()"
+                 data-name="BMW i7"
+                 data-category="BMW i SERIES"
+                 data-description="Sedan điện cao cấp kết hợp công nghệ hiện đại và sự tinh tế."
+                 data-image="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1600&q=80">
+
+                <img
+                    src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=800&q=80"
+                    alt="BMW i7">
+
+                <h3>BMW i7</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+    <section id="technology" class="technology">
+
+        <div>
+            <p class="section-small">
+                CÔNG NGHỆ
+            </p>
+
+            <h2>
+                Công nghệ tạo nên<br>
+                trải nghiệm tương lai.
+            </h2>
+
+            <p>
+                BMW không ngừng phát triển những công nghệ mới
+                nhằm mang đến khả năng vận hành, an toàn và tiện nghi
+                vượt trội.
+            </p>
+        </div>
+
+        <div class="technology-box">
+
+            <div>
+                <h3>01</h3>
+                <p>BMW ConnectedDrive</p>
+            </div>
+
+            <div>
+                <h3>02</h3>
+                <p>BMW Intelligent Personal Assistant</p>
+            </div>
+
+            <div>
+                <h3>03</h3>
+                <p>BMW Electric Mobility</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-logo">
+            BMW
+        </div>
+
+        <p>
+            © 2026 BMW Demo Website
+        </p>
+
+        <p>
+            Website được xây dựng phục vụ bài tập HTML, CSS và JavaScript.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
